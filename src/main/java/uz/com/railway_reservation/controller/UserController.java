@@ -40,7 +40,6 @@ public class UserController {
     }
 
     @GetMapping("/get-by-id")
-    @PreAuthorize("hasRole('ADMIN')")
     public StandardResponse<UserForFront> getById(
             @RequestParam UUID id
     ){
